@@ -20,8 +20,22 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-main.css">
     <link rel="stylesheet" href="css/ld.style.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    
+    
+    <style type="text/css">
+        .mobileHide { display: inline;}
+        /* Smartphone Portrait and Landscape */
+        @media only screen
+        and (min-device-width : 320px)
+        and (max-device-width : 480px){  .mobileHide { display: none;}}
 
+        .mobileShow { display: none;}
+   
+         @media only screen
+         and (min-device-width : 320px)
+         and (max-device-width : 480px){ .mobileShow { display: inline;}}
+   
+     </style>
     
 
    
@@ -102,7 +116,7 @@
                 
                     <div class="timeline-section">
                         <div class="main-wrapper-resume">
-                            <div class="carttitle-wrapper">
+                            <div class="carttitle-wrapper mobileHide">
                                 <div class="color-box">
                                     <button id="red-color" class="btn-style"></button><button id="yellow-color" class="btn-style"></button><button id="blue-color" class="btn-style"></button><button id="green-color" class="btn-style"></button><button id="setting-icon">
                                         <i class="fa fa-cog fa-spin"></i>
@@ -488,6 +502,11 @@
                                    </div>
                                 </div>
                         </div>
+                            
+                             <div class="mobileShow btnpaddine">
+                                <button class="btn"><i class="fa fa-download"></i><span>Laden Sie den Lebenslauf als pdf herunter</span></button>
+                                <p class="btnpaddine">Oder Öffnen Sie die Website auf einem Desktop, um den Lebenslauf online anzuzeigen</p>
+                             </div>
                     </div>
                     
                 </section>
