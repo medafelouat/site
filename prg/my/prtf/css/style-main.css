@@ -516,3 +516,34 @@ button#green-color {
     border-color: #cf455c;
     box-shadow: 0 0 0 0rem rgba(0,123,255,.25);
 }
+
+/* Style buttons */
+.btn {
+    background-color: #cf455c;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /* Darker background on mouse-over */
+  .btn:hover {
+    background-color: #bb1833;
+  }
+
+  .btnpaddine {
+      padding: 35px 20px;
+
+      text-align: center;
+    
+  }
+
+  .btnpaddine > p {
+      text-align: center;
+      font-family: 'Oswald', sans-serif;
+  }
+
+  .btnpaddine, span {
+      padding-left: 5px;
+  }
